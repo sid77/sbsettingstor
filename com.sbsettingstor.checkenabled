@@ -1,0 +1,6 @@
+#!/bin/sh
+rm -f /tmp/torcheck
+launchctl list | grep -q it.slackware.sid77.tor
+if [ $? -eq 0 ]; then
+  touch /tmp/torcheck
+fi
