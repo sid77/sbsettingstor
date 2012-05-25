@@ -1,3 +1,4 @@
 #!/bin/sh
 launchctl unload -w /System/Library/LaunchDaemons/it.slackware.sid77.tor.plist
-launchctl unload -w /System/Library/LaunchDaemons/it.slackware.sid77.polipo.plist
+pfctl -F all
+pfctl -d
