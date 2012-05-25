@@ -1,3 +1,4 @@
 #!/bin/sh
 launchctl load -w /System/Library/LaunchDaemons/it.slackware.sid77.tor.plist
+pfctl -F all
 pfctl -e -f /var/mobile/Library/MobileTor/pf.conf
